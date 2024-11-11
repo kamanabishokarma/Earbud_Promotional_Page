@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Novo EarBuds</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet"/>
+    <!-- link to greensock main library and scroll plugin -->
+  </head>
+  <body>
+     <!-- <model-viewer> HTML element -->
+      <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+        <button class="Hotspot" slot="hotspot-1" data-position="34.680958645328865m 58.646966045784424m -65.47477287266858m" data-normal="0.8677705056897105m 0.495778515736228m -0.03432219091793296m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation"></div>
+        </button><button class="Hotspot" slot="hotspot-2" data-position="66.38372858860129m 29.868303502896552m 82.89008854747084m" data-normal="-0.5462759929960571m -0.008715757680203766m -0.8375598934071711m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Earbud</div>
+        </button><button class="Hotspot" slot="hotspot-3" data-position="-43.61298505582931m -88.11124551050338m 17.300971939850953m" data-normal="-0.1158480388818861m -0.19937072616429574m -0.9730521802225935m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation"></div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="ar_hand_prompt.png">
+        </div>
+      </model-viewer>  
+    <!-- Loads <model-viewer> for browsers: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
